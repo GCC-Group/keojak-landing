@@ -2,6 +2,8 @@ name: deploy static website to AWS-S3
 
 on:
   push:
+    branches:
+      - "release"
 jobs:
   deploy:
     runs-on: ubuntu-latest
