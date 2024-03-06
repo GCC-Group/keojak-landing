@@ -54,10 +54,10 @@
                         커피를 사랑하는 사람들을 위한 <br/>대한민국 No.1 바리스타 커뮤니티
                     </p>
                     <div class="store-link-wrap">
-                        <a href="https://keojak.page.link/open-app" target="_blank" class="store-link appstore">
+                        <a class="store-link appstore" >
                             <img src="./assets/images/appstore--white.svg" class="apple" alt="iOS">
                         </a>
-                        <a href="https://keojak.page.link/open-app" target="_blank" class="store-link google">
+                        <a class="store-link google">
                             <img src="./assets/images/google--white.svg" class="google" alt="Android">
                         </a>
                     </div>
@@ -199,10 +199,10 @@
                         <strong>전화</strong> 02-512-6024 | <strong>문의</strong> contact@keojak.com
                     </address>
                     <div class="store-link-wrap">
-                        <a href="https://keojak.page.link/open-app" target="_blank" class="store-link appstore">
+                        <a class="store-link appstore">
                             <img src="./assets/images/appstore.svg" class="apple" alt="iOS">
                         </a>
-                        <a href="https://keojak.page.link/open-app" target="_blank" class="store-link google">
+                        <a class="store-link google">
                             <img src="./assets/images/google.svg" class="google" alt="Android">
                         </a>
                     </div>
@@ -230,6 +230,22 @@
                 },
             });
         });
+
+        const storeLinks = document.querySelectorAll('.store-link');
+
+        const appLink = 'https://keojak.page.link/open-app';
+
+        storeLinks.forEach((storeLink) => {
+            storeLink.addEventListener('click', () => {
+                window.open(appLink, '_blank');
+
+            });
+        });
+
+
+
+
+     
     </script>
 </body>
 </html>

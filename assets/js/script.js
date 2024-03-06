@@ -16,12 +16,15 @@ function getCurrentScroll() {
   return document.body.pageYOffset || document.documentElement.scrollTop;
 }
 
-document.querySelectorAll('a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+document.querySelectorAll("a").forEach((anchor) => {
+  console.log();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+  anchor.addEventListener("click", function (e) {
+    if (anchor.getAttribute("class")) return;
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
     });
+  });
 });
