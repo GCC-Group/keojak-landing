@@ -1,0 +1,10 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { 
+            "namespace": "android_app", 
+            "package_name": "com.gcc.keojak",
+            "sha256_cert_fingerprints": ["59:E2:8B:76:84:AF:D5:DF:56:43:36:6C:C3:6B:AA:EF:77:1F:9C:DA:EC:E0:81:F5:D5:1D:C7:0C:0F:07:B9:42"] 
+        }
+    }
+]

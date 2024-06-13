@@ -3,6 +3,8 @@ const header = document.querySelector("#header");
 let shrinkHeader = header.getBoundingClientRect().height;
 let gotop = 800;
 
+
+
 window.addEventListener("scroll", function () {
   let scroll = getCurrentScroll();
   if (scroll >= shrinkHeader) {
